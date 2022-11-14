@@ -14,6 +14,7 @@ export class GithubService {
 
   constructor(private http: HttpClient) {}
 
+  
   getAll() {
     this.http
       .get<Array<Resposta>>('https://api.github.com/users/larguesa/repos')
